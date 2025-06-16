@@ -29,7 +29,7 @@ batch_residence_times_h = (time_seconds + (cycle_dosing_time_h * 3600)) / 3600
 batch_flow = product_concentration_kg_per_L / batch_residence_times_h * 24 * 365
 
 # Plot
-fig, ax = plt.subplots(figsize=(12, 6), dpi=600)
+fig, ax = plt.subplots(figsize=(12, 6), dpi=300)
 
 ax.plot(time_seconds, plug_flow, label="Continuous Plug Flow", color="tab:blue")
 ax.plot(time_seconds, batch_flow, label="Batch (Cycle + Dosing)", color="tab:orange")
