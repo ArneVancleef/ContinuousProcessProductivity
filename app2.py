@@ -11,7 +11,7 @@ st.set_page_config(layout="wide")
 
 # Sidebar controls
 product_concentration_g_per_L = st.sidebar.slider("Concentration (g/L)", 1, 500, 100)
-cycle_dosing_time_h = st.sidebar.slider("Cycle Time (h)", 0.0, 24.0, 10, step=0.01)
+cycle_dosing_time_h = st.sidebar.slider("Cycle Time (h)", 0.0, 24.0, 10.0, step=0.01)
 log_scale_y = st.sidebar.checkbox("Logarithmic Y-Axis", value=True)
 
 log_min = st.sidebar.slider("Log Min Time (10^x sec)", -3.0, 5.0, 0.0, step=0.01)
